@@ -25,6 +25,7 @@ This repository holds the showcase material: the demo video, screenshots and Blu
 - [Keeping the content up to date](#keeping-the-content-up-to-date)
 - [Testing](#testing)
 - [Limitations and next steps](#limitations-and-next-steps)
+- [Third-party work](#third-party-work)
 - [Tools](#tools)
 
 ## Why I built it
@@ -121,10 +122,10 @@ I built it in that order: the offline loop in the client first, then the backend
 
 - **Data-table quiz.** Each row of a data table is one question with its branches. A wrong option jumps to a "wrong" branch that leads back to the question, and the right option jumps to a "correct" branch that ends the dialogue. Questions, options and feedback are edited in the table, with no Blueprint changes and no recompiling.
 - **One NPC class, many instances.** All NPCs are instances of the same Blueprint. At the start of a round a controller Blueprint gives each NPC a random row from its chapter's table, so every round has a different set of questions. The client ships with 115 questions, split by chapter across the tables bound to the eight NPC stations.
-- **Dialogue component.** It creates the guide ring, sets its colour and the interaction range, hides the ring during dialogue, and marks the NPC as finished afterwards. Text speed, camera behaviour and sounds are parameters in the same tables.
+- **Dialogue component.** Based on a Marketplace dialogue plugin that I modified. It creates the guide ring, sets its colour and the interaction range, hides the ring during dialogue, and marks the NPC as finished afterwards. Text speed, camera behaviour and sounds are parameters in the same tables.
 - **Scoring and results.** Global counters track correct answers and attempts. When the correct count reaches eight, the results screen opens and input switches to the UI. Restarting resets every counter.
-- **Scene.** A compact cyberpunk city block. An elevated rail line and neon signage act as landmarks, and the road layout gives clear routes between the eight stations, so players can find each NPC without a map.
-- **Materials.** One master material (base colour, normal, emissive, roughness offset, UV controls) with a material instance per asset. The neon look comes from swapping textures and tuning emissive strength in the instances.
+- **Scene.** A compact cyberpunk city block that uses a Marketplace environment pack. An elevated rail line and neon signage act as landmarks, and the road layout gives clear routes between the eight stations, so players can find each NPC without a map.
+- **Materials.** The scene's materials follow one pattern: a master material (base colour, normal, emissive, roughness offset, UV controls) with a material instance per asset. The neon look is tuned by swapping textures and adjusting emissive strength in the instances.
 - **Start screen.** It lists the controls and also covers scene loading, so the first seconds in the scene do not stutter.
 - **AI tutor widget.** It builds a JSON body with `player_id`, `session_id` and `message`, sends an HTTP POST, and writes the `answer` field into the panel.
 - **VR build.** A separate, reduced project for Pico headsets. See [VR build](#vr-build).
@@ -228,6 +229,15 @@ Response time over 50 consecutive `/npc/chat` calls (top-K 5, 700-token limit): 
 - The AI tutor depends on an external model service, so its quality varies with the network, cost limits and the model's consistency. It still needs citation checks, content filtering and better fallbacks.
 - Testing covered whether the system works, not whether students learn more with it. That needs a classroom study, and a dashboard of learning data would help run one.
 - The VR build is a reduced demo.
+
+## Third-party work
+
+- **City environment.** An Unreal Marketplace cyberpunk environment pack.
+- **Dialogue component.** An Unreal Marketplace dialogue plugin, modified for the quiz flow.
+- **HTTP and JSON in Blueprint.** The VaRest plugin.
+- **Language model.** GLM-4 through the ZhipuAI API.
+
+The learning design, the question tables and their branching, random question assignment, scoring and results, the AI tutor panel, the backend service and the tests are my own work.
 
 ## Tools
 
