@@ -2,7 +2,7 @@
 
 **English** | [中文](README.zh-CN.md)
 
-A financial-education game built in Unreal Engine 5. The player walks through a cyberpunk city block, finds eight robot NPCs and answers a finance question from each one. At any point they can open a chat panel and ask an AI tutor, which answers from the course question bank and says which question it drew on. This was my bachelor's graduation project (Software Engineering, Sanda University, Shanghai, 2026).
+A financial-education game built in Unreal Engine 5. The player walks through a cyberpunk city block, finds eight robot NPCs and answers a finance question from each one. At any point they can open a chat panel and ask an AI tutor, which answers from the course question bank and says which question it drew on. A separate [VR build](#vr-build) runs on a Pico headset. This was my bachelor's graduation project (Software Engineering, Sanda University, Shanghai, 2026).
 
 ![Gameplay preview](media/preview.gif)
 
@@ -55,7 +55,20 @@ The quiz runs entirely inside the client, so it works offline. Only the AI tutor
 - **Scoring and results.** Global counters track correct answers and attempts. When the correct count reaches eight, the results screen opens and input switches to the UI. Restarting resets every counter.
 - **Scene.** A cyberpunk city block with an elevated rail line and neon signage as landmarks. Materials use one master material (base colour, normal, emissive, roughness offset, UV controls) with material instances per asset.
 - **AI tutor widget.** It builds a JSON body with `player_id`, `session_id` and `message`, sends an HTTP POST, and writes the `answer` field into the panel.
-- **VR build.** A separate, reduced build for Pico Neo 3 headsets: teleport movement, with questions shown in world space and answered by walking left or right. It does not have all the features of the PC version.
+- **VR build.** A separate, reduced project for Pico headsets. See [VR build](#vr-build).
+
+## VR build
+
+A separate, reduced project for Pico headsets (Pico Neo 3 and later). It was run and demonstrated on a headset. Its job was to check that the scene and the basic interaction hold up in VR, not to reproduce the PC version.
+
+| | |
+|---|---|
+| ![The VR build in use on a headset](media/screenshots/11-vr-headset-session.jpg) | ![In-headset view with the teleport arc](media/screenshots/12-vr-teleport.jpg) |
+| The VR build in use, with the headset view shown on a monitor | In-headset view: controllers, the teleport arc and the instructions placed in the world |
+
+- **Movement.** Parabolic-arc teleport: push the right thumbstick forward to show the arc, and release to jump to the landing point. The left thumbstick turns the view. Teleporting gets the player to an NPC quickly and causes less motion sickness than continuous movement.
+- **Questions without menus.** To avoid fiddly UI clicking and widget-focus problems in VR, the four-option panel was dropped. The question and the feedback are placed as text in the world, and the player answers by walking to the left or to the right. A wrong choice can be retried, and a right one leads to the next question.
+- **Guidance.** Yellow lines on the ground lead from one question to the next.
 
 ## Backend (Python 3.11, FastAPI)
 
