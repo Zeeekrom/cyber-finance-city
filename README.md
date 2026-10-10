@@ -147,7 +147,7 @@ I built it in that order: the offline loop in the client first, then the backend
 
 ## VR build
 
-A separate, reduced project for Pico headsets (Pico Neo 3 and later). It was run and demonstrated on a headset. Its job was to check that the scene and the basic interaction hold up in VR, not to reproduce the PC version.
+A separate, reduced project for Pico headsets (Pico Neo 3 and later), built on PICO's official Unreal Engine sample project for controller interaction. It was run and demonstrated on a headset. Its job was to check that the scene and the basic interaction hold up in VR, not to reproduce the PC version.
 
 | | |
 |---|---|
@@ -235,6 +235,7 @@ Response time over 50 consecutive `/npc/chat` calls (top-K 5, 700-token limit): 
 - **City environment.** An Unreal Marketplace cyberpunk environment pack.
 - **Dialogue component.** An Unreal Marketplace dialogue plugin, modified for the quiz flow.
 - **HTTP and JSON in Blueprint.** The VaRest plugin.
+- **VR build.** Started from PICO's official Unreal Engine sample project for controller interaction, which provides the controllers and teleport movement.
 - **Language model.** GLM-4 through the ZhipuAI API.
 
 The learning design, the question tables and their branching, random question assignment, scoring and results, the AI tutor panel, the backend service and the tests are my own work.
