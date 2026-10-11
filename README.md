@@ -2,16 +2,17 @@
 
 **English** | [中文](README.zh-CN.md)
 
-A financial-education game built in Unreal Engine 5. The player walks through a cyberpunk city block, finds eight robot NPCs and answers a finance question from each one. At any point they can open a chat panel and ask an AI tutor, which answers from the course question bank and says which question it drew on. A separate [VR build](#vr-build) runs on a Pico headset. This was my bachelor's graduation project (Software Engineering, Sanda University, Shanghai, 2026).
+A metaverse financial-education platform built in Unreal Engine 5 and played as a game. The player walks through a cyberpunk city block, finds eight robot NPCs and answers a finance question from each one. At any point they can open a chat panel and ask an AI tutor, which answers from the course question bank and says which question it drew on. A separate [VR build](#vr-build) runs on a Pico headset. This was my bachelor's graduation project (Software Engineering, Sanda University, Shanghai, 2026).
 
 ![Gameplay preview](media/preview.gif)
 
 **[Watch the full demo video](media/cyber-finance-city-demo.mp4)** (3 min 28 s, no sound) · [download the MP4](https://github.com/Zeeekrom/cyber-finance-city/raw/main/media/cyber-finance-city-demo.mp4)
 
-This repository holds the showcase material: the demo video, screenshots and Blueprint captures. The Unreal project, the backend source and the thesis are not included. The game interface and the question bank are in Chinese.
+This repository holds the showcase material: the demo video, screenshots, Blueprint captures and a poster. The Unreal project, the backend source and the thesis are not included. The game interface and the question bank are in Chinese.
 
 ## Contents
 
+- [At a glance](#at-a-glance)
 - [Why I built it](#why-i-built-it)
 - [Who it is for](#who-it-is-for)
 - [How it plays](#how-it-plays)
@@ -24,9 +25,23 @@ This repository holds the showcase material: the demo video, screenshots and Blu
 - [Backend (Python 3.11, FastAPI)](#backend-python-311-fastapi)
 - [Keeping the content up to date](#keeping-the-content-up-to-date)
 - [Testing](#testing)
+- [What carries over to training and simulation](#what-carries-over-to-training-and-simulation)
 - [Limitations and next steps](#limitations-and-next-steps)
 - [Third-party work](#third-party-work)
 - [Tools](#tools)
+- [Poster](#poster)
+
+## At a glance
+
+| | |
+|---|---|
+| What it is | A walkable 3D city for practising finance: questions, feedback, a score and an AI tutor |
+| Engine | Unreal Engine 5.5.1, Blueprint |
+| Runs on | Windows PC, plus a reduced VR build on a Pico headset |
+| One session | Explore, answer at eight stations, retry after mistakes, finish on a results screen |
+| Scale | Eight NPC stations, 115 questions, one backend endpoint, 26 test cases |
+| Content | Questions, feedback and pacing are edited in tables by a teacher, with no rebuild |
+| Status | Finished graduation project, 2026 |
 
 ## Why I built it
 
@@ -223,6 +238,17 @@ Test environment:
 
 Response time over 50 consecutive `/npc/chat` calls (top-K 5, 700-token limit): 10 s on average, 5 s at best, 20 s at worst, no failures. Most of that time is the model generating text.
 
+## What carries over to training and simulation
+
+The subject here is finance, but most of the structure is not specific to it. These are the parts I would reuse in a training or simulation product:
+
+- **A session with a task, feedback and a result.** The learner acts in a 3D scene, each action is judged, attempts are counted, and the session ends on a score that can be reviewed.
+- **Content owned by the instructor.** Which questions are asked, at which station, and how long a round lasts are set in tables and settings. Nobody opens a Blueprint to prepare a class.
+- **The same scene on a monitor and in a headset.** The VR build showed what does not survive the move: menus, mouse clicks and continuous movement. Teleporting, text placed in the world and guide lines on the ground replaced them.
+- **The engine as the front end of another system.** The client and the backend meet at one small interface: text in, an answer with its sources out. Either side can change without the other. A visual front end needs the same separation from the model that drives it.
+- **Finding the way without a map.** Landmarks, a clear road layout and a marker on each station that changes colour when it is done let a first-time user get around the scene.
+- **Written test cases.** 26 cases with steps and expected results, grouped by module, including what happens when the model service fails or the question bank is missing.
+
 ## Limitations and next steps
 
 - Keyword retrieval ranks unreliably for paraphrased or long questions. Vector or hybrid retrieval is the next step.
@@ -244,6 +270,12 @@ The learning design, the question tables and their branching, random question as
 
 Unreal Engine 5.5.1 (Blueprint), VaRest plugin for HTTP and JSON, Python 3.11, FastAPI, Uvicorn, Pydantic, python-docx, python-dotenv, ZhipuAI SDK with GLM-4, Swagger UI, Pico Neo 3.
 
+## Poster
+
+<img src="media/poster.jpg" alt="Project poster" width="520">
+
+A one-page summary of the project, made in October 2026 from the screenshots in this repository.
+
 ## Thesis and related paper
 
 The project was submitted with a thesis written in Chinese: *Design and Implementation of a Metaverse Financial Education Platform Based on 3D Engine Technology* (April 2026). It is not published here.
@@ -252,6 +284,6 @@ A related paper that I co-authored: [Exploring User Experience and Learning Moti
 
 ## Rights and contact
 
-© 2026 Yuxiang (Evan) Huang. The video and screenshots are shared for portfolio viewing. Please ask before reusing them.
+© 2026 Yuxiang (Evan) Huang. The video, screenshots and poster are shared for portfolio viewing. Please ask before reusing them.
 
 Contact: [LinkedIn](https://www.linkedin.com/in/evan-h-165976301/)
