@@ -8,6 +8,10 @@
 
 **[观看完整演示视频](media/cyber-finance-city-demo.mp4)**（3 分 28 秒，无声）· [下载 MP4](https://github.com/Zeeekrom/cyber-finance-city/raw/main/media/cyber-finance-city-demo.mp4)
 
+<a href="https://zeeekrom.github.io/cyber-finance-city/film/"><img src="film/preview.jpg" alt="播放 System Scan：84 秒的系统讲解短片" width="640"></a>
+
+**短片：**[观看 *System Scan*，84 秒的系统讲解](https://zeeekrom.github.io/cyber-finance-city/film/)（英文旁白，含真实游戏画面，游戏里的中文已在画面上译成英文）
+
 本仓库只包含展示材料：演示视频、截图、蓝图截图和一张海报。Unreal 工程文件、后端源码和毕业论文不在其中。
 
 ## 目录

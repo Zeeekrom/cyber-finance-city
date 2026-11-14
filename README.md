@@ -8,6 +8,10 @@ A metaverse financial-education platform built in Unreal Engine 5 and played as 
 
 **[Watch the full demo video](media/cyber-finance-city-demo.mp4)** (3 min 28 s, no sound) · [download the MP4](https://github.com/Zeeekrom/cyber-finance-city/raw/main/media/cyber-finance-city-demo.mp4)
 
+<a href="https://zeeekrom.github.io/cyber-finance-city/film/"><img src="film/preview.jpg" alt="Play System Scan, an 84-second narrated walkthrough of how the system works" width="640"></a>
+
+**Film:** [watch *System Scan*, an 84-second narrated walkthrough of the system](https://zeeekrom.github.io/cyber-finance-city/film/) (English, with real gameplay; the game's Chinese text is translated on screen)
+
 This repository holds the showcase material: the demo video, screenshots, Blueprint captures and a poster. The Unreal project, the backend source and the thesis are not included. The game interface and the question bank are in Chinese.
 
 ## Contents
