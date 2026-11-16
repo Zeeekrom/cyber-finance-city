@@ -118,7 +118,7 @@ flowchart TD
 | | |
 |---|---|
 | ![开始界面](media/screenshots/01-start-screen.jpg) | ![城市街区与 NPC 点位](media/screenshots/02-city-and-npc.jpg) |
-| **开始界面。** 操作说明，场景在背后加载 | **答题点。** 引导环标出尚未完成的 NPC |
+| **开始界面。** 操作说明：移动、跳跃、对话和向导师提问 | **答题点。** 引导环标出尚未完成的 NPC |
 | ![四选一题目](media/screenshots/03-question.jpg) | ![答错重试](media/screenshots/04-wrong-answer-retry.jpg) |
 | **题目。** 四个选项 | **答错。** 先给提示，再"再试一次" |
 | ![回答正确](media/screenshots/05-correct-answer.jpg) | ![结算界面](media/screenshots/09-results.jpg) |

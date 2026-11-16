@@ -119,7 +119,7 @@ The score is the number of questions divided by the total number of attempts, sh
 | | |
 |---|---|
 | ![Start screen](media/screenshots/01-start-screen.jpg) | ![City block with an NPC station](media/screenshots/02-city-and-npc.jpg) |
-| **Start screen.** The controls, shown while the scene loads | **A station.** The ring marks an NPC with an open question |
+| **Start screen.** The controls: move, jump, talk and ask the tutor | **A station.** The ring marks an NPC with an open question |
 | ![Question with four options](media/screenshots/03-question.jpg) | ![Wrong answer and retry](media/screenshots/04-wrong-answer-retry.jpg) |
 | **A question.** Four options | **Wrong answer.** Feedback, then "try again" |
 | ![Correct answer](media/screenshots/05-correct-answer.jpg) | ![Results screen](media/screenshots/09-results.jpg) |
