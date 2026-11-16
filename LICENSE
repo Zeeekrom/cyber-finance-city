@@ -1,0 +1,21 @@
+Copyright (c) 2026 Cyber Finance City. All rights reserved.
+
+No licence is granted to copy, modify, republish or distribute the contents of this repository, in whole or in
+part, without the written permission of the copyright holder. This does not limit what copyright law already
+allows, such as fair dealing for research, study, criticism, review or news reporting. Sharing links is welcome.
+
+Third-party material keeps its own licence:
+
+- Unreal Engine, the Unreal Marketplace cyberpunk city environment pack and the Unreal Marketplace dialogue
+  plugin (modified for the quiz): used under Epic Games' licence terms.
+- The VaRest plugin (HTTP and JSON in Blueprint): used under its own licence.
+- PICO's official Unreal Engine sample project for controller interaction, which the VR build started from:
+  used under PICO's terms for its developer samples.
+- GLM-4: used through the ZhipuAI API under ZhipuAI's terms of service.
+- The film's narration is a synthetic voice made with Kokoro-82M by hexgrad, licensed under the Apache License,
+  Version 2.0, https://www.apache.org/licenses/LICENSE-2.0. The film's music and sound effects are original.
+- The film's on-screen type uses Rajdhani, Copyright (c) 2014, Indian Type Foundry, and Share Tech Mono,
+  Copyright (c) 2012, Carrois Type Design, Ralph du Carrois, with Reserved Font Name 'Share'. Both are licensed
+  under the SIL Open Font License, Version 1.1, https://openfontlicense.org
+
+Terms, licences and privacy: https://zeeekrom.github.io/cyber-finance-city/film/terms.html
