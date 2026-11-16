@@ -280,9 +280,7 @@ The subject here is finance, but most of the structure is not specific to it. Th
 
 ## Copyright and terms
 
-© 2026 Cyber Finance City. All rights reserved; see [LICENSE](LICENSE). The text, film, video, screenshots, Blueprint
-captures and poster in this repository, and the project's own code and design, may not be republished, copied or
-adapted without written permission. Sharing links is welcome. The third-party parts listed above keep their own
+© 2026 Cyber Finance City. All rights reserved; see [LICENSE](LICENSE). Without written permission, nothing in this repository may be copied, republished or adapted, and the project's code and design may not be rebuilt, whether by hand, with automated tools or with AI cloning tools. The code may not be reverse engineered except where the law allows, and the content may not be scraped, bulk-downloaded or used to train or evaluate AI models. Uses the law already allows, such as fair dealing for review or news reporting, are not affected. Sharing links is welcome. The third-party parts listed above keep their own
 licences. Terms, licences and privacy: [terms page](https://zeeekrom.github.io/cyber-finance-city/film/terms.html).
 
 Contact: [LinkedIn](https://www.linkedin.com/in/evan-h-165976301/)

@@ -279,8 +279,7 @@ flowchart LR
 
 ## 版权与条款
 
-© 2026 Cyber Finance City。保留所有权利，见 [LICENSE](LICENSE)。本仓库里的文字、短片、视频、截图、蓝图截图和海报，以及
-项目自己的代码和设计，未经书面许可不得转载、复制或改编。欢迎分享链接。上面列出的第三方内容保留它们各自的许可。条款、
+© 2026 Cyber Finance City，保留所有权利，见 [LICENSE](LICENSE)。未经书面许可，不得复制、转载或改编本仓库的任何内容，也不得用手工、自动化工具或 AI 克隆工具重建项目的代码和设计；除法律允许的情形外，不得对代码进行逆向工程；不得抓取、批量下载这些内容，或把它们用于训练、评测 AI 模型。法律本身允许的使用（如为评论、新闻报道合理引用）不受影响。欢迎分享链接。上面列出的第三方内容保留它们各自的许可。条款、
 许可与隐私：[条款页](https://zeeekrom.github.io/cyber-finance-city/film/terms.html)（英文）。
 
 联系方式：[LinkedIn](https://www.linkedin.com/in/evan-h-165976301/)
