@@ -28,8 +28,8 @@ AI 导师放在答题旁边。玩家随时可以按 E，用自己的话提问。
 ——系统是怎么工作的：八个答题点的答题流程、每局从 115 道题里抽 8 道、注明来源的 AI 导师，以及 Pico VR 版本。真实游戏画面，
 英文旁白（合成语音）；游戏里的中文已在画面上译成英文。
 
-**演示视频：** [观看完整的游戏录屏](media/cyber-finance-city-demo.mp4)
-——3 分 28 秒，无声。[下载 MP4](https://github.com/Zeeekrom/cyber-finance-city/raw/main/media/cyber-finance-city-demo.mp4)。
+**演示视频：** [观看完整的游戏录屏](https://zeeekrom.github.io/cyber-finance-city/demo/)
+——3 分 28 秒，无声。
 
 **相关论文：** [Exploring User Experience and Learning Motivation as Key Mediators in Metaverse-Based Financial Big Data Education](https://doi.org/10.1145/3802133.3802247)
 ——IECA 2026（ACM），我是合著者之一。

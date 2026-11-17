@@ -29,8 +29,8 @@ This repository holds the showcase material only: a narrated film, a demo video,
 that names its source, and the Pico VR build. Real gameplay with English narration (a synthetic voice); the game's
 Chinese text is translated on screen.
 
-**Demo video:** [watch the full gameplay recording](media/cyber-finance-city-demo.mp4)
-— 3 min 28 s, no sound. [Download the MP4](https://github.com/Zeeekrom/cyber-finance-city/raw/main/media/cyber-finance-city-demo.mp4).
+**Demo video:** [watch the full gameplay recording](https://zeeekrom.github.io/cyber-finance-city/demo/)
+— 3 min 28 s, no sound.
 
 **Related paper:** [Exploring User Experience and Learning Motivation as Key Mediators in Metaverse-Based Financial Big Data Education](https://doi.org/10.1145/3802133.3802247)
 — IECA 2026 (ACM). I am one of its co-authors.
